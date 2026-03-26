@@ -35,8 +35,6 @@ Here-doc support:
 ```bash
 ./pipex here_doc LIMITER cmd cmd1 outfile
 ```
-```
-```
 
 ## Build
 
@@ -46,15 +44,9 @@ Here-doc support:
 git clone https://github.com/mike-k-git/42_pipex.git
 cd 42_pipex
 ```
-```
-```
-```
-```
-```
 
 ### Initialize submodules
 
-```
 ```bash
 git submodule update --init --recursive
 ```
@@ -69,7 +61,4 @@ This project uses submodules for dependencies:
 ```bash
 make
 make bonus
-```
-
-```
 ```
