@@ -74,7 +74,7 @@ char	*ft_get_cmd_path(char *cmd, char **envp)
 	{
 		if (ft_strncmp(envp[i], "PATH=", 5) == 0)
 		{
-			paths = ft_split(envp[i] + 5, ':');
+			paths = ft_split(envp[i] + 5, ':', NULL);
 			if (!paths)
 				return (NULL);
 			path = ft_try_paths(paths, cmd);

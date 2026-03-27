@@ -65,7 +65,7 @@ $(LIBGNL):
 
 $(NAME): $(LIBFT) $(LIBFTPRINTF) $(OBJ) .mandatory
 	@echo "Linking $(CYAN)$@ (MANDATORY)$(RESET)."
-	@$(CC) $(CFLAGS) $(OBJ) -L$(LIBFTDIR) -L$(LIBFTPRINTFDIR) -lft -lftprintf -o $@
+	@$(CC) $(CFLAGS) $(OBJ) -L$(LIBFTDIR) -L$(LIBFTPRINTFDIR) -lftprintf -lft -o $@
 
 .mandatory:
 	@touch .mandatory
@@ -75,7 +75,7 @@ bonus: $(LIBFT) $(LIBFTPRINTF) $(LIBGNL) .bonus
 
 .bonus: $(OBJ_BONUS)
 	@echo "Linking $(CYAN)$(NAME) (BONUS)$(RESET)."
-	@$(CC) $(CFLAGS) $(OBJ_BONUS) -L$(LIBFTDIR) -L$(LIBFTPRINTFDIR) -L$(LIBGNLDIR) -lft -lftprintf -lgnl -o $(NAME)
+	@$(CC) $(CFLAGS) $(OBJ_BONUS) -L$(LIBFTDIR) -L$(LIBFTPRINTFDIR) -L$(LIBGNLDIR) -lftprintf -lgnl -lft -o $(NAME)
 	@touch .bonus
 	@rm -f .mandatory
 

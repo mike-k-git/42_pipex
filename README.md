@@ -13,7 +13,7 @@ This project replicates how commands are chained using pipes (|) in a shell, han
 Execute two commands with a pipe:
 
 ```bash
- < infile cmd1 | cmd2 > outfile
+ ./pipex infile cmd1 cmd2 outfile
 ```
 
 Handles:
@@ -27,7 +27,7 @@ Handles:
 Multiple pipes:
 
 ```bash
-< infile cmd1 | cmd2 | cmd3 | ... | cmdN > outfile
+./pipex infile cmd1 cmd2 cmd3 ... cmdN outfile
 ```
 
 Here-doc support:

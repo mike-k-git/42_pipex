@@ -14,6 +14,7 @@
 # define PIPEX_BONUS_H
 
 # include <sys/types.h>
+# include <stdint.h>
 
 // Environment
 char		*ft_get_cmd_path(char *cmd, char **envp);

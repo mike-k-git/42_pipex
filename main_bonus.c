@@ -13,6 +13,7 @@
 #include "pipex_bonus.h"
 #include "libft.h"
 #include <stdlib.h>
+#include <stdint.h>
 
 int	main(int argc, char **argv, char **envp)
 {

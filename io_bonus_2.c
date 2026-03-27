@@ -12,6 +12,7 @@
 
 #include "pipex.h"
 #include "libft.h"
+#include <stdint.h>
 
 char	*ft_pseudo_random_filename(uintptr_t rnd)
 {

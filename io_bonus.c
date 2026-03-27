@@ -68,6 +68,7 @@ void	ft_here_doc(char *limiter, int *read_end, uintptr_t rnd)
 			&& line[ft_strlen(limiter)] == '\n')
 		{
 			free(line);
+      gnl_clear(STDIN_FILENO);
 			break ;
 		}
 		ft_safe_write(tmp_fd, line, rnd);
